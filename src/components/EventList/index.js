@@ -4,9 +4,9 @@ import EventItem from "../EventItem";
 const EventList = ({ url }) => {
   // state
   const [data, setData] = useState();
-  const [error, setError] = useState("");
+  const [error, setError] = useState();
 
-  // get data via API
+  // Async get data via API
   const getData = async () => {
     try {
       const res = await fetch(url, {
@@ -18,7 +18,9 @@ const EventList = ({ url }) => {
       const json = await res.json();
       setData(json.records);
     } catch (err) {
-      setError(err);
+      setError(
+        "The events API did not return any data. Check your privacy tools (such as Privacy Badger) and ad blockers (such as uBlock Origin)."
+      );
     }
   };
 
@@ -42,21 +44,18 @@ const EventList = ({ url }) => {
 
   const Results = ({ data }) => {
     return (
-      <>
-        <h1 className="display-4 mb-4 mt-4">Upcoming Events</h1>
-        <ul className="list-unstyled">
-          {data.map(item => (
-            <EventItem key={item.id} {...item.fields} />
-          ))}
-        </ul>
-      </>
+      <ul className="list-unstyled">
+        {data.map(item => (
+          <EventItem key={item.id} {...item.fields} />
+        ))}
+      </ul>
     );
   };
 
   return (
     <>
-      {error && <Error />}
-      {!data ? <Loading /> : <Results data={data} />}
+      <h1 className="display-4 mb-4 mt-4">Upcoming Events</h1>
+      {error ? <Error /> : !data ? <Loading /> : <Results data={data} />}
     </>
   );
 };
