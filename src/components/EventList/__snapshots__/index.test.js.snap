@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EventList it should render 1`] = `
+Array [
+  "",
+  <div
+    className="d-flex justify-content-center mt-5"
+  >
+    <div
+      className="spinner-border"
+      role="status"
+      style={
+        Object {
+          "height": "3rem",
+          "width": "3rem",
+        }
+      }
+    >
+      <span
+        className="sr-only"
+      >
+        Loading...
+      </span>
+    </div>
+  </div>,
+]
+`;

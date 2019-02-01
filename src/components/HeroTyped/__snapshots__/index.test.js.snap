@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroTyped it should render 1`] = `
+<div
+  style={
+    Object {
+      "backgroundImage": "url(hatch.jpg)",
+      "backgroundPosition": "center",
+      "backgroundRepeat": "no-repeat",
+      "backgroundSize": "cover",
+      "boxShadow": "inset 0 0 10rem rgba(0, 0, 0, 1)",
+      "height": "100vh",
+      "position": "relative",
+      "width": "100vw",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "bottom": "25vh",
+        "color": "white",
+        "position": "absolute",
+        "textAlign": "center",
+        "width": "100vw",
+      }
+    }
+  >
+    <p
+      style={
+        Object {
+          "fontSize": "calc(52px + 1.5vw + 0.5vmin)",
+          "fontWeight": "500",
+          "marginBottom": "0",
+        }
+      }
+    >
+      Hatch Labs
+    </p>
+    <p
+      style={
+        Object {
+          "fontSize": "calc(18px + 1.5vw + 0.5vmin)",
+          "fontWeight": "300",
+          "marginBottom": "0",
+          "marginTop": "-0.5vw",
+        }
+      }
+    >
+      Hatch your 
+       
+      <span
+        id="mockTyped"
+      >
+        mockUserCom
+      </span>
+    </p>
+    <a
+      className="btn btn-lg btn-outline-primary mt-4"
+      href="/"
+    >
+      Get started!
+    </a>
+  </div>
+</div>
+`;

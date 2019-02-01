@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home it should render 1`] = `
+<div
+  className=""
+>
+  <div
+    style={
+      Object {
+        "backgroundImage": "url(hatch.jpg)",
+        "backgroundPosition": "center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+        "boxShadow": "inset 0 0 10rem rgba(0, 0, 0, 1)",
+        "height": "100vh",
+        "position": "relative",
+        "width": "100vw",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "bottom": "25vh",
+          "color": "white",
+          "position": "absolute",
+          "textAlign": "center",
+          "width": "100vw",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "fontSize": "calc(52px + 1.5vw + 0.5vmin)",
+            "fontWeight": "500",
+            "marginBottom": "0",
+          }
+        }
+      >
+        Hatch Labs
+      </p>
+      <p
+        style={
+          Object {
+            "fontSize": "calc(18px + 1.5vw + 0.5vmin)",
+            "fontWeight": "300",
+            "marginBottom": "0",
+            "marginTop": "-0.5vw",
+          }
+        }
+      >
+        Hatch your 
+         
+        <span
+          id="mockTyped"
+        >
+          mockUserCom
+        </span>
+      </p>
+      <a
+        className="btn btn-lg btn-outline-primary mt-4"
+        href="/"
+      >
+        Get started!
+      </a>
+    </div>
+  </div>
+  <div
+    className="row justify-content-center mt-4"
+  >
+    <div
+      className="col-8"
+    >
+      <div
+        className="text-center mx-auto"
+      >
+        <h1
+          className="display-4"
+        >
+          MAKE, SHARE, LEARN
+        </h1>
+        <p
+          className="lead"
+        >
+          Making is fundamental to what it means to be human. We must make, create, and express ourselves to feel whole. There is something unique about making physical things. Things we make are like little pieces of us and seem to embody portions of our soul.
+        </p>
+        <a
+          className="btn btn-primary"
+          href="https://www.boerneneshovedstad.dk/media/1332/maker-movement-manifesto-sample-chapter.pdf"
+          target="_self"
+        >
+          Make with Us
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        
+        <div
+          className="d-flex justify-content-center mt-5"
+        >
+          <div
+            className="spinner-border"
+            role="status"
+            style={
+              Object {
+                "height": "3rem",
+                "width": "3rem",
+              }
+            }
+          >
+            <span
+              className="sr-only"
+            >
+              Loading...
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

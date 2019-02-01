@@ -1,14 +1,16 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { mount } from "enzyme";
-import HeroTyped from "../HeroTyped";
+import EventList from "../EventList";
 
-describe("HeroTyped", () => {
+describe("EventList", () => {
   // mount the component
   let mountedComponent;
   const getMountedComponent = () => {
     if (!mountedComponent) {
-      mountedComponent = mount(<HeroTyped />);
+      mountedComponent = mount(
+        <EventList url={process.env.REACT_APP_AIRTABLE_API_URL} />
+      );
     }
     return mountedComponent;
   };
@@ -18,17 +20,11 @@ describe("HeroTyped", () => {
   });
 
   it("it should render", () => {
-    const component = renderer.create(<HeroTyped />);
+    const component = renderer.create(
+      <EventList url={process.env.REACT_APP_AIRTABLE_API_URL} />
+    );
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
-  });
-
-  it("it should say Hatch Labs", () => {
-    const p = getMountedComponent()
-      .find("p")
-      .first();
-
-    expect(p.text()).toContain("Hatch Labs");
   });
 });
 
