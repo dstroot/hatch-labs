@@ -1,31 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`EventList it should render 1`] = `
-Array [
-  <h1
-    className="display-4 mb-4 mt-4"
-  >
-    Upcoming Events
-  </h1>,
+<div
+  className="d-flex justify-content-center mt-5"
+>
   <div
-    className="d-flex justify-content-center mt-5"
-  >
-    <div
-      className="spinner-border"
-      role="status"
-      style={
-        Object {
-          "height": "3rem",
-          "width": "3rem",
-        }
+    className="spinner-border"
+    role="status"
+    style={
+      Object {
+        "height": "3rem",
+        "width": "3rem",
       }
+    }
+  >
+    <span
+      className="sr-only"
     >
-      <span
-        className="sr-only"
-      >
-        Loading...
-      </span>
-    </div>
-  </div>,
-]
+      Loading...
+    </span>
+  </div>
+</div>
 `;
