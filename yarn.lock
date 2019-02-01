@@ -6273,6 +6273,11 @@ loglevel@^1.4.1:
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.1.tgz#e0fc95133b6ef276cdc8887cdaf24aa6f156f8fa"
   integrity sha1-4PyVEztu8nbNyIh82vJKpvFW+Po=
 
+lolex@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/lolex/-/lolex-3.0.0.tgz#f04ee1a8aa13f60f1abd7b0e8f4213ec72ec193e"
+  integrity sha512-hcnW80h3j2lbUfFdMArd5UPA/vxZJ+G8vobd+wg3nVEQA0EigStbYcrG030FJxL6xiDDPEkoMatV9xIh5OecQQ==
+
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -9922,6 +9927,13 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
+timezonecomplete@^5.7.0:
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/timezonecomplete/-/timezonecomplete-5.7.0.tgz#cc89243f99a96cf54f62671cd3b6d9012ea1aa5e"
+  integrity sha512-uiJY5MaQ7HN0PxZKoq1PibMgkLQPxvPjKtvAx5GaletU0Hzb5bmh/I2seu32rZLwhZLvY07m1HezRIBuS8WfAw==
+  dependencies:
+    tzdata "^1.0.11"
+
 timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
@@ -10069,6 +10081,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+tzdata@^1.0.11:
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/tzdata/-/tzdata-1.0.15.tgz#b215a2cf240fa6592bac17a1c52d1d0f000ed727"
+  integrity sha512-HPEWU+VfFI4oU9dAd2LFxlfp08T7vA4uO11ln/wxquO1OiD8B39yBqjjkQbrkpj52i0jsDYQv4ukOvpG/f0Iaw==
 
 ua-parser-js@^0.7.18:
   version "0.7.19"

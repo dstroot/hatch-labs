@@ -39,11 +39,23 @@ describe("EventItem", () => {
     return mountedComponent;
   };
 
+  const RealDate = Date;
+
   beforeEach(() => {
     mountedComponent = undefined;
+
+    // mock the date/time
+    const currentDate = new Date("2019-01-31T20:00:00.000Z");
+    global.Date = jest.fn(() => new RealDate(currentDate.toISOString()));
+    Object.assign(Date, RealDate);
+  });
+
+  afterEach(() => {
+    global.Date = RealDate;
   });
 
   it("it should render", () => {
+    // mockDate("2017-11-25T12:34:56z");
     const component = renderer.create(<EventItem {...data} />);
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
