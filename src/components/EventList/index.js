@@ -7,7 +7,7 @@ const EventList = ({ url }) => {
   const { data, error } = useFetch(url);
 
   // Error state
-  const Error = () => <p className="lead text-danger">{error}</p>;
+  const Error = () => <p className="lead text-danger">{error.message}</p>;
 
   // Loading state
   const Loading = () => (
@@ -33,12 +33,13 @@ const EventList = ({ url }) => {
     );
   };
 
-  return (
-    <>
-      <h1 className="display-4 mb-4 mt-4">Upcoming Events</h1>
-      {error ? <Error /> : !data ? <Loading /> : <Results data={data} />}
-    </>
-  );
+  // Render
+  if (error) return <Error />;
+  if (data) {
+    return <Results data={data} />;
+  } else {
+    return <Loading />;
+  }
 };
 
 export default EventList;

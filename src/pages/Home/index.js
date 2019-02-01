@@ -28,6 +28,7 @@ const Home = () => {
       <div className="container">
         <div className="row">
           <div className="col">
+            <h1 className="display-4 mb-4 mt-4">Upcoming Events</h1>
             <EventList url={process.env.REACT_APP_AIRTABLE_API_URL} />
           </div>
         </div>
