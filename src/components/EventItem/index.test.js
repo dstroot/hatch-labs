@@ -55,7 +55,6 @@ describe("EventItem", () => {
   });
 
   it("it should render", () => {
-    // mockDate("2017-11-25T12:34:56z");
     const component = renderer.create(<EventItem {...data} />);
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
