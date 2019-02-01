@@ -41,7 +41,6 @@ const EventList = ({ url }) => {
   );
 
   const Results = ({ data }) => {
-    console.log(data);
     return (
       <>
         <h1 className="display-4 mb-4 mt-4">Upcoming Events</h1>
