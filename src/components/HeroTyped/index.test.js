@@ -4,7 +4,11 @@ import { mount } from "enzyme";
 import HeroTyped from "../HeroTyped";
 import image from "../../media/hatch.jpg";
 
-jest.mock("react-typed", () => () => <span id="mockTyped">mockUserCom</span>);
+// What we care about is the functionality of <HeroTyped />, but not
+// the dependent component "Typed" from "react-typed" (which breaks our tests!)
+// So we will just mock it using jest so we can test the main functionality
+// of our component.
+jest.mock("react-typed", () => () => <span id="mockTyped">mockTyped</span>);
 
 describe("HeroTyped", () => {
   // mount the component

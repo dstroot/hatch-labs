@@ -55,7 +55,7 @@ exports[`Home it should render 1`] = `
         <span
           id="mockTyped"
         >
-          mockUserCom
+          mockTyped
         </span>
       </p>
       <a

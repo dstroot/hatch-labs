@@ -2,7 +2,11 @@ import React from "react";
 import renderer from "react-test-renderer";
 import Home from "../Home";
 
-jest.mock("react-typed", () => () => <span id="mockTyped">mockUserCom</span>);
+// What we care about is the functionality of <HeroTyped />, but not
+// the dependent component "Typed" from "react-typed" (which breaks our tests!)
+// So we will just mock it using jest so we can test the main functionality
+// of our component.
+jest.mock("react-typed", () => () => <span id="mockTyped">mockTyped</span>);
 
 describe("Home", () => {
   it("it should render", () => {
