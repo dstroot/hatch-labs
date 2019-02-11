@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "@reach/router";
 import logo from "./media/logo-horiz.svg";
+import "./styles.scss";
 
 // isCurrent - true if the location.pathname is exactly the same as the anchor’s href.
 const isActive = ({ isCurrent }) => {
