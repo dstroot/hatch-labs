@@ -43,6 +43,8 @@ const EventItem = ({
       <img
         className="mr-3 d-none d-sm-block"
         src={imageURL[0].url}
+        width="200px"
+        height="225px"
         alt="event"
       />
       <div className="media-body align-self-center">

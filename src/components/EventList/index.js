@@ -4,7 +4,7 @@ import { useFetch } from "../useFetch";
 
 const EventList = ({ url }) => {
   // fetch our API data
-  const { data, error } = useFetch(url);
+  const [data, error] = useFetch(url);
 
   // Error state
   const Error = () => <p className="lead text-danger">{error.message}</p>;

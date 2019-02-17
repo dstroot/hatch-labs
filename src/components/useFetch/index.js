@@ -31,13 +31,11 @@ const useFetch = url => {
     }
   };
 
-  // pass empty array to useEffect so we only
-  // process once when mounting the component.
   useEffect(() => {
     getData();
-  }, []); // empty array
+  }, [url]); // empty array (run once only), or URL to re-run when url changes
 
-  return { error, data };
+  return [data, error];
 };
 
 export { useFetch };
