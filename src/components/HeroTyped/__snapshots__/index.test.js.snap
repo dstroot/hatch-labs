@@ -4,7 +4,7 @@ exports[`HeroTyped it should render 1`] = `
 <div
   style={
     Object {
-      "backgroundImage": "url(hatch.jpg)",
+      "backgroundImage": "linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(hatch.jpg)",
       "backgroundPosition": "center",
       "backgroundRepeat": "no-repeat",
       "backgroundSize": "cover",

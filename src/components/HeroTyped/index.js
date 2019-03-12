@@ -4,7 +4,8 @@ import Typed from "react-typed";
 const HeroTyped = ({ image, tagline, typed, strings }) => {
   const hero = {
     /* Image */
-    backgroundImage: `url(${image})`,
+    // backgroundImage: `url(${image})`,
+    backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(${image})`,
 
     /* Set height and width */
     width: "100vw",

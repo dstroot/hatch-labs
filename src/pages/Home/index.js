@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 // components
 import HeroTyped from "../../components/HeroTyped";
-import image from "../../media/hatch.jpg";
+import image from "../../media/hatch2.jpg";
 import TextHero from "../../components/TextHero";
 import EventList from "../../components/EventList";
 
